@@ -1,0 +1,253 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'poppins' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+body{
+    background: linear-gradient(#040228 0%,#040228 40%) ;
+
+    min-height: 100vh;
+    
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+padding: 20px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
+}
+.logo{
+    color: #fff;
+    font-size: 1cm;
+    cursor: default;
+
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 6px;
+border-radius: 20px;
+}
+.navbar a:hover,
+.navbar a.active{
+   background: #00a3b9;
+}
+.parallex
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 125vh;
+}
+
+.parallex img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #040228;
+
+}
+.sec h2 {
+    font: size 3cm;
+color: #fff;
+margin-bottom: 10px;
+}
+
+.sec h2:nth-child(2)
+{
+    font: size 2cm;
+}
+.sec p{
+    font-size: 1cm;
+    color: #fff;
+    font-weight: 300;
+
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .column {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+  }
+  .card {
+    background : transparent ;
+    border: 2px solid rgba(255,255,255, .0.1);
+    padding: 5.5em 1em;
+    border-radius: 0.6em;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #162938;
+  }
+  .card .img-container {
+    width: 8em;
+    height: 8em;
+
+    padding: -0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .card h2 {
+    font-weight: 500;
+    padding: 20px;
+  }
+
+  .card:hover {
+    background: linear-gradient(#1f1f20, #16161a);
+    color: #ffffff;
+  }
+  .card:hover .img-container {
+    transform: scale(1.10);
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 4em 1em;
+    }
+    .column {
+      flex: 1 1 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
+
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+
+.about-container{
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    
+    border: 2px solid rgba(255,255,255, .0.1);
+    border-radius: 20px;
+    backdrop-filter : blur(10px);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+.text-container h1{
+    font-size: 70px;
+    padding: 20px 0px;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: #162938;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #162938;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 400px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
+}
+.copyright {
+  padding: 0.3em 1em;
+  background-color: black;
+  text-align: center;
+}
+.copyright p {
+  font-size: 0.9em;
+  
+  color: #fff;
+
+}

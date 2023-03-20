@@ -1,0 +1,143 @@
+
+*{
+    background: linear-gradient(#040228);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'poppins' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('Document\ \(1\).png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+padding: 20px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
+}
+.logo{
+    color: #fff;
+    font-size: 1cm;
+    cursor: default;
+
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 6px;
+border-radius: 20px;
+}
+.navbar a:hover,
+.navbar a.active{
+   background: #00a3b9;
+}
+
+
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1{
+    
+    font-weight: 750;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    font-size:2em;
+    color:#fff;
+    text-decoration-style: solid;
+    
+}
+
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid  #fff;
+}
+
+.container form input::placeholder{
+    color:#fff;
+}
+
+.container form #lastName,
+.container form #mobile{
+    margin-left: 20px;
+}
+
+.container form h4{
+    color:#fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid#fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+
+.container form #button{
+    align-items: center;
+    border: none;
+    background:#162938;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    width: 100px;
+    padding: 0;
+cursor: pointer;
+}
+
+.container form #button:hover{
+    opacity: 0.7;
+}
